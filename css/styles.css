@@ -173,3 +173,14 @@ footer {
   .contact { grid-template-columns: 1fr 1fr; }
 }
 
+/* Attribution link (optional) */
+.credit {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-top: 0.25rem;
+}
+.credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
