@@ -29,40 +29,32 @@
   <section aria-labelledby="order-form-title">
     <h3 id="order-form-title">Varauslomake</h3>
     <form class="form" action="#" method="post">
-      <label>
-        Nimi
-        <input type="text" name="nimi" required />
-      </label>
+  <label for="nimi">Nimi</label>
+  <input id="nimi" name="nimi" type="text" required autocomplete="name" placeholder="Etunimi ja sukunimi">
 
-      <label>
-        Osoite
-        <input type="text" name="osoite" required />
-      </label>
+  <label for="osoite">Osoite</label>
+  <input id="osoite" name="osoite" type="text" required autocomplete="address-line1" placeholder="Katuosoite, huoneisto">
 
-      <label>
-        Puhelin
-        <input type="tel" name="puhelin" required />
-      </label>
+  <label for="puhelin">Puhelin</label>
+  <input id="puhelin" name="puhelin" type="tel" required autocomplete="tel" placeholder="+358 …">
 
-      <label>
-        Pyörän kuvaus
-        <textarea name="kuvaus" rows="4" placeholder="Merkki, malli, ongelma"></textarea>
-      </label>
+  <label for="kuvaus">Pyörän kuvaus</label>
+  <textarea id="kuvaus" name="kuvaus" required placeholder="Merkki, malli, ongelma"></textarea>
 
-      <div class="grid-2">
-        <label>
-          Päivämäärä
-          <input type="date" name="paiva" required />
-        </label>
+  <div class="grid-2">
+    <div>
+      <label for="paiva">Päivämäärä</label>
+      <input id="paiva" name="paiva" type="date" required>
+    </div>
+    <div>
+      <label for="aika">Kellonaika</label>
+      <input id="aika" name="aika" type="time" required>
+    </div>
+  </div>
 
-        <label>
-          Kellonaika
-          <input type="time" name="aika" required />
-        </label>
-      </div>
+  <button type="submit">Lähetä</button>
+</form>
 
-      <button class="cta-button" type="submit">Lähetä</button>
-    </form>
   </section>
 </main>
 
