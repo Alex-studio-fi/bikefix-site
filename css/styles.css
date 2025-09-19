@@ -569,3 +569,23 @@ footer { padding: 1.25rem 1rem; }
     justify-content: flex-start;
   }
 }
+
+.hero {
+  grid-template-columns: 0.95fr 1fr;
+}
+
+.hero > img {
+  width: min(100%, 420px);
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  height: 100%;
+}
+
+.hero-right h2 { margin: 0 0 0.5rem 0; font-size: 2.2rem; }
+.hero-right p  { margin: 0; max-width: 52ch; }
+.hero-right .cta-button { margin-top: auto; }
