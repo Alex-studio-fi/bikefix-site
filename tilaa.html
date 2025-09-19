@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tilaa huolto – BikeFix</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>BikeFix</h1>
+    <ul>
+      <li><a href="index.html">Etusivu</a></li>
+      <li><a href="palvelut.html">Palvelut</a></li>
+      <li><a href="tilaa.html" aria-current="page">Tilaa huolto</a></li>
+      <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h2>Tilaa huolto</h2>
+    <p>Täytä lomake – noudamme pyöräsi haluamanasi ajankohtana.</p>
+  </section>
+
+  <section aria-labelledby="order-form-title">
+    <h3 id="order-form-title">Varauslomake</h3>
+    <form class="form" action="#" method="post">
+      <label>
+        Nimi
+        <input type="text" name="nimi" required />
+      </label>
+
+      <label>
+        Osoite
+        <input type="text" name="osoite" required />
+      </label>
+
+      <label>
+        Puhelin
+        <input type="tel" name="puhelin" required />
+      </label>
+
+      <label>
+        Pyörän kuvaus
+        <textarea name="kuvaus" rows="4" placeholder="Merkki, malli, ongelma"></textarea>
+      </label>
+
+      <div class="grid-2">
+        <label>
+          Päivämäärä
+          <input type="date" name="paiva" required />
+        </label>
+
+        <label>
+          Kellonaika
+          <input type="time" name="aika" required />
+        </label>
+      </div>
+
+      <button class="cta-button" type="submit">Lähetä</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 BikeFix</p>
+</footer>
+
+</body>
+</html>

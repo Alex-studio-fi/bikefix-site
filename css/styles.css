@@ -1,0 +1,175 @@
+/* ===== Base / Reset ===== */
+body {
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Header & Navigation ===== */
+header {
+  background: #0038A8; /* Finnish flag blue */
+  color: #fff;
+  padding: 1rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+/* ===== Hero ===== */
+.hero {
+  background: #f0f4ff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0038A8;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #0038A8;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background 0.2s ease-in-out;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  background: #002a7a;
+}
+
+/* ===== Steps (How it works) ===== */
+.steps {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.steps h3 {
+  text-align: center;
+  color: #0038A8;
+}
+
+.steps ol {
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #0038A8;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* ===== Responsive tweaks ===== */
+@media (min-width: 768px) {
+  .hero h2 {
+    font-size: 2.4rem;
+  }
+  .hero p {
+    font-size: 1.25rem;
+  }
+}
+
+/* ===== Containers & Layout helpers ===== */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+
+.cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.card {
+  border: 1px solid #e6e9f2;
+  border-radius: 12px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.form {
+  max-width: 700px;
+  margin: 1rem auto 2rem;
+  display: grid;
+  gap: 1rem;
+}
+.form input, .form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #cfd6e6;
+  border-radius: 8px;
+  font: inherit;
+}
+.grid-2 { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+
+.contact {
+  max-width: 1100px;
+  margin: 1rem auto 2rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+.map-placeholder {
+  background: #f0f4ff;
+  border: 1px dashed #0038A8;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  color: #0038A8;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .contact { grid-template-columns: 1fr 1fr; }
+}
+
