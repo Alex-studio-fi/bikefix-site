@@ -143,34 +143,45 @@ header .brand a:focus { text-decoration: underline; }
   white-space:nowrap; border:0;
 }
 
+/* mobile */
 @media (max-width: 900px){
   header{ position: sticky; top: 0; z-index: 1000; }
   header nav{ position: relative; }
 
   .menu-toggle{ display:inline-flex; }
 
+  /* closed state */
   nav ul{
     position: absolute;
     left:0; right:0; top:64px;
     background: var(--blue);
-    margin:0; padding: .75rem 1rem;
+    margin:0;
+    padding:0;
     display:grid; gap:0;
     border-top:1px solid rgba(255,255,255,.15);
-    max-height:0; overflow:hidden;
-    transition: max-height .25s ease;
+    max-height:0;
+    overflow:hidden;
+    visibility:hidden;
+    pointer-events:none;
+    transition: max-height .25s ease, padding .2s ease, visibility 0s linear .25s;
   }
   nav li{ list-style:none; padding:.5rem 0; }
   nav a{ display:block; }
 
+  /* open state */
+  body.menu-open nav ul{
+    padding:.75rem 1rem;
+    max-height:320px;
+    visibility:visible;
+    pointer-events:auto;
+    transition: max-height .25s ease, padding .2s ease, visibility 0s;
+  }
 }
 
+/* desktop */
 @media (min-width: 901px){
   .menu-toggle{ display:none; }
   nav ul{ position: static; display:flex; gap:1rem; max-height:none; border:0; }
   nav li{ padding:0; }
 }
-@media (max-width: 900px){
-  body.menu-open nav ul{
-    max-height: 320px;
-  }
-}
+
