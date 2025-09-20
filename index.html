@@ -9,16 +9,16 @@
 </head>
 <body>
 
-  <!-- Yläpalkki -->
-  <header>
+<header>
   <nav>
     <h1 class="brand"><a href="index.html">BikeFix</a></h1>
 
-    <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">
-      <span class="visually-hidden">Menu</span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Menu">
+      <svg class="hamburger" width="28" height="20" viewBox="0 0 28 20" aria-hidden="true" focusable="false">
+        <rect x="0" y="0"  width="28" height="4" rx="2" fill="currentColor"/>
+        <rect x="0" y="8"  width="28" height="4" rx="2" fill="currentColor"/>
+        <rect x="0" y="16" width="28" height="4" rx="2" fill="currentColor"/>
+      </svg>
     </button>
 
     <ul id="main-menu">
@@ -30,49 +30,38 @@
   </nav>
 </header>
 
-  <main>
-  <!-- Hero-osio -->
+<main>
   <section class="hero">
-  <img
-  src="images/etusivu_hero.svg"
-  alt="Mekaanikko noutaa polkupyörän huoltoon"
-  width="1200" height="400"
-  decoding="async" fetchpriority="high"
->
+    <img
+      src="images/etusivu_hero.svg"
+      alt="Mekaanikko noutaa polkupyörän huoltoon"
+      width="1200" height="400"
+      decoding="async" fetchpriority="high"
+      style="max-width:100%;height:auto;border-radius:8px;">
+    <div class="hero-right">
+      <h2>Huolto kotioveltasi</h2>
+      <p>Pyöräsi huolto ilman stressiä – tilaa huolto verkossa ja me hoidamme loput.</p>
+      <a href="tilaa.html" class="cta-button">Tilaa huolto</a>
+    </div>
+  </section>
 
-
-  <div class="hero-right">
-    <h2>Huolto kotioveltasi</h2>
-    <p>Pyöräsi huolto ilman stressiä – tilaa huolto verkossa ja me hoidamme loput.</p>
-    <a href="tilaa.html" class="cta-button">Tilaa huolto</a>
-  </div>
-</section>
-
-
-
-
-
-
-  <!-- Miten toimii -->
   <section class="steps">
-  <h3>Miten toimii?</h3>
-  <ol>
-    <li>Tilaa huolto lomakkeella</li>
-    <li>Noudamme pyöräsi sovittuna aikana</li>
-    <li>Palautamme sen huollettuna</li>
-  </ol>
-</section>
+    <h3>Miten toimii?</h3>
+    <ol>
+      <li>Tilaa huolto lomakkeella</li>
+      <li>Noudamme pyöräsi sovittuna aikana</li>
+      <li>Palautamme sen huollettuna</li>
+    </ol>
+  </section>
 </main>
 
-  <!-- Footer -->
-  <footer>
+<footer>
   <p>© 2025 BikeFix</p>
   <p class="credit">
     Illustrations by
     <a href="https://storyset.com/people" target="_blank" rel="noopener">Storyset</a>
   </p>
 </footer>
-
 
 </body>
 </html>

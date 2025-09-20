@@ -337,3 +337,102 @@ header nav {
     top: 56px;              /* aligns exactly under header */
   }
 }
+@media (max-width: 900px){
+  header{ position: sticky; top: 0; z-index: 1000; }
+  header nav{ position: relative; }
+
+  .menu-toggle{ display:inline-flex; }
+
+  nav ul{
+    position:absolute; left:0; right:0; top:56px;
+    background: var(--blue);
+    margin:0; padding:0;
+    display:none; gap:0; border:0;
+    visibility:hidden; pointer-events:none;
+  }
+  body.menu-open nav ul{
+    display:grid; padding:.75rem 1rem;
+    border-top:1px solid rgba(255,255,255,.15);
+    visibility:visible; pointer-events:auto;
+  }
+}
+@media (min-width: 901px){
+  .menu-toggle{ display:none; }
+  nav ul{ position:static; display:flex; gap:1rem; border:0; }
+}
+.menu-toggle{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:44px; height:44px; margin-left:auto; border:0; background:transparent;
+  color:#fff; -webkit-tap-highlight-color:transparent; cursor:pointer;
+}
+.menu-toggle .hamburger{ display:block }
+.menu-toggle:focus-visible{ outline:3px solid #fff; outline-offset:2px }
+
+/* Header sizing and alignment */
+header { padding: 0; }
+header nav {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 10px 16px;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+/* Hamburger button uses inline SVG */
+.menu-toggle{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:44px;
+  height:44px;
+  margin-left:auto;
+  background:transparent;
+  border:0;
+  color:#fff;
+  -webkit-tap-highlight-color: transparent;
+  cursor:pointer;
+}
+.menu-toggle .hamburger{ display:block }
+.menu-toggle:focus-visible{ outline:3px solid #fff; outline-offset:2px }
+.menu-toggle:active{ transform: translateY(1px) }
+
+/* Hide any legacy bars if present */
+.menu-toggle .bar,
+.menu-toggle .visually-hidden{ display:none !important; }
+
+/* Mobile dropdown: hidden by default, shown when body has .menu-open */
+@media (max-width: 900px){
+  header nav{ position: relative; }
+  .menu-toggle{ display:inline-flex; }
+
+  nav ul{
+    position:absolute;
+    left:0; right:0; top:56px;
+    background: var(--blue);
+    margin:0;
+    padding:0;
+    display:none;
+    gap:0;
+    border:0;
+    visibility:hidden;
+    pointer-events:none;
+  }
+  nav li{ list-style:none; padding:.5rem 0; }
+  nav a{ display:block; }
+
+  body.menu-open nav ul{
+    display:grid;
+    padding:.75rem 1rem;
+    border-top:1px solid rgba(255,255,255,.15);
+    visibility:visible;
+    pointer-events:auto;
+  }
+}
+
+/* Desktop keeps inline menu; button hidden */
+@media (min-width: 901px){
+  .menu-toggle{ display:none; }
+  nav ul{ position: static; display:flex; gap:1rem; border:0; }
+  nav li{ padding:0; }
+}

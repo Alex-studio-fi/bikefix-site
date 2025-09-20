@@ -13,9 +13,12 @@
   <nav>
     <h1 class="brand"><a href="index.html">BikeFix</a></h1>
 
-    <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">
-      <span class="visually-hidden">Menu</span>
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Menu">
+      <svg class="hamburger" width="28" height="20" viewBox="0 0 28 20" aria-hidden="true" focusable="false">
+        <rect x="0" y="0"  width="28" height="4" rx="2" fill="currentColor"/>
+        <rect x="0" y="8"  width="28" height="4" rx="2" fill="currentColor"/>
+        <rect x="0" y="16" width="28" height="4" rx="2" fill="currentColor"/>
+      </svg>
     </button>
 
     <ul id="main-menu">
@@ -49,7 +52,6 @@
     <div>
       <h3>Kartta</h3>
       <div class="map-placeholder" aria-label="Kartta">
-        <!-- Google Maps embed voidaan lisätä myöhemmin -->
         <p>Google Maps (tulossa)</p>
       </div>
     </div>
