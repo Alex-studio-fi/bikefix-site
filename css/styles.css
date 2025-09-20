@@ -536,3 +536,32 @@ header nav ul{
     pointer-events: auto;
   }
 }
+/* desktop nav polish */
+@media (min-width:901px){
+  nav a{
+    position:relative;
+    text-decoration:none;
+    color:#fff;
+    font-weight:700;
+    padding:.25rem 0;
+  }
+  nav a::after{
+    content:"";
+    position:absolute;
+    left:0; right:0; bottom:-4px;
+    height:2px;
+    background:#fff;
+    opacity:0;
+    transform:scaleX(0);
+    transition:transform .2s ease, opacity .2s ease;
+  }
+  nav a:hover::after,
+  nav a:focus-visible::after{
+    opacity:.9;
+    transform:scaleX(1);
+  }
+  nav a[aria-current="page"]::after{
+    opacity:1;
+    transform:scaleX(1);
+  }
+}
