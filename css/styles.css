@@ -670,3 +670,30 @@ header nav a[aria-current="page"] {
     margin-top: 76px; /* ≈ 2cm */
   }
 }
+/* Home hero – desktop rhythm */
+@media (min-width: 901px){
+  .home .hero-right{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .home .hero-right h2{
+    margin-top: -44px;           
+    margin-bottom: 0;
+    line-height: 1.15;
+  }
+
+  
+  .home .hero-right p{
+    margin-top: 40px;            
+    margin-bottom: 0;
+    max-width: 52ch;             
+  }
+
+  
+  .home .hero-right .cta-button{
+    margin-top: 28px;            
+    align-self: flex-start;
+  }
+}
