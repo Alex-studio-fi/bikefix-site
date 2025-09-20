@@ -565,3 +565,56 @@ header nav ul{
     transform:scaleX(1);
   }
 }
+/* Mobile dropdown polish */
+@media (max-width:900px){
+  
+  body.menu-open{ overflow:hidden; }
+
+  
+  header nav ul{
+    border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(0,0,0,.18);
+    gap: .25rem;
+  }
+
+  
+  header nav li + li{ border-top: 1px solid rgba(255,255,255,.12); }
+  header nav a{
+    padding: .9rem .25rem;      
+    font-size: 1.05rem;
+  }
+
+  
+  @keyframes dropdownIn{
+    from{ opacity:0; transform: translateY(-6px); }
+    to  { opacity:1; transform: translateY(0); }
+  }
+  body.menu-open header nav ul{
+    animation: dropdownIn .16s ease-out;
+  }
+}
+/* fix: remove legacy underline to avoid double underlines */
+nav a[aria-current="page"] {
+  text-decoration: none !important;
+}
+@media (max-width: 900px){
+  /* компактнее список */
+  header nav ul{
+    gap: 0 !important;
+  }
+  header nav li{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  header nav li + li{
+    border-top: 1px solid rgba(255,255,255,.12);
+  }
+  
+  header nav a{
+    display: block;
+    font-size: 1rem;
+    line-height: 1.25;
+    padding: .75rem 0;       
+    text-decoration: none;   
+  }
+}
