@@ -618,3 +618,13 @@ nav a[aria-current="page"] {
     text-decoration: none;   
   }
 }
+/* --- force remove native underline in header nav --- */
+header nav a {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+header nav a[aria-current="page"] {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
