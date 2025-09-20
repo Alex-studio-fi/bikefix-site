@@ -108,3 +108,11 @@ textarea:focus-visible {
   outline-offset: 2px;
   border-radius: 6px;
 }
+header .brand a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: .2px;
+}
+header .brand a:hover,
+header .brand a:focus { text-decoration: underline; }

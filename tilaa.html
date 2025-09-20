@@ -10,7 +10,7 @@
 
 <header>
   <nav>
-    <h1>BikeFix</h1>
+    <h1 class="brand"><a href="index.html">BikeFix</a></h1>
     <ul>
       <li><a href="index.html">Etusivu</a></li>
       <li><a href="palvelut.html">Palvelut</a></li>
@@ -29,34 +29,34 @@
   <section aria-labelledby="order-form-title">
     <h3 id="order-form-title">Varauslomake</h3>
     <form class="form" action="#" method="post">
-  <label for="nimi">Nimi</label>
-  <input id="nimi" name="nimi" type="text" required autocomplete="name" placeholder="Etunimi ja sukunimi">
+      <label for="nimi">Nimi</label>
+      <input id="nimi" name="nimi" type="text" required autocomplete="name" placeholder="Etunimi ja sukunimi">
 
-  <label for="osoite">Osoite</label>
-  <input id="osoite" name="osoite" type="text" required autocomplete="address-line1" placeholder="Katuosoite, huoneisto">
+      <label for="osoite">Osoite</label>
+      <input id="osoite" name="osoite" type="text" required autocomplete="address-line1" placeholder="Katuosoite, huoneisto">
 
-  <label for="puhelin">Puhelin</label>
-  <input id="puhelin" name="puhelin" type="tel" required autocomplete="tel" placeholder="+358 …">
+      <label for="puhelin">Puhelin</label>
+      <input id="puhelin" name="puhelin" type="tel" required autocomplete="tel" placeholder="+358 …">
 
-  <label for="kuvaus">Pyörän kuvaus</label>
-  <textarea id="kuvaus" name="kuvaus" required placeholder="Merkki, malli, ongelma"></textarea>
+      <label for="kuvaus">Pyörän kuvaus</label>
+      <textarea id="kuvaus" name="kuvaus" required placeholder="Merkki, malli, ongelma"></textarea>
 
-  <div class="grid-2">
-    <div>
-      <label for="paiva">Päivämäärä</label>
-      <input id="paiva" name="paiva" type="date" required>
-    </div>
-    <div>
-      <label for="aika">Kellonaika</label>
-      <input id="aika" name="aika" type="time" required>
-    </div>
-  </div>
+      <div class="grid-2">
+        <div>
+          <label for="paiva">Päivämäärä</label>
+          <input id="paiva" name="paiva" type="date" required>
+        </div>
+        <div>
+          <label for="aika">Kellonaika</label>
+          <input id="aika" name="aika" type="time" required>
+        </div>
+      </div>
 
-  <button type="submit">Lähetä</button>
-</form>
-
+      <button type="submit">Lähetä</button>
+    </form>
   </section>
 </main>
+
 
 <footer>
   <p>© 2025 BikeFix</p>
