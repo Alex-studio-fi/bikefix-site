@@ -184,4 +184,45 @@ header .brand a:focus { text-decoration: underline; }
   nav ul{ position: static; display:flex; gap:1rem; max-height:none; border:0; }
   nav li{ padding:0; }
 }
+/* MOBILE NAV – final */
+@media (max-width: 900px){
+  header{ position: sticky; top: 0; z-index: 1000; }
+  header nav{ position: relative; }
+
+  .menu-toggle{ display:inline-flex; }
+
+  /* CLOSED: fully gone */
+  nav ul{
+    position:absolute;
+    left:0; right:0; top:64px;
+    background:var(--blue);
+    margin:0;
+    padding:0;
+    display:none;            
+    gap:0;
+    border:0;                
+    max-height:none;
+    overflow:hidden;
+    visibility:hidden;
+    pointer-events:none;
+  }
+  nav li{ list-style:none; padding:.5rem 0; }
+  nav a{ display:block; }
+
+  /* OPEN: visible & clickable */
+  body.menu-open nav ul{
+    display:grid;            
+    padding:.75rem 1rem;
+    border-top:1px solid rgba(255,255,255,.15);
+    visibility:visible;
+    pointer-events:auto;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 901px){
+  .menu-toggle{ display:none; }
+  nav ul{ position:static; display:flex; gap:1rem; border:0; }
+  nav li{ padding:0; }
+}
 
