@@ -640,3 +640,20 @@ header nav a[aria-current="page"] {
     padding: .9rem 0 !important;      
   }
 }
+/* Home (index): lift and enlarge the hero title a bit */
+.home .hero{ padding-top: 1.5rem; }               
+.home .hero-right{ gap: .8rem; }                  
+.home .hero-right h2{
+  font-size: clamp(2.4rem, 2.2vw + 1.4rem, 3rem); 
+  line-height: 1.15;
+  margin-top: -6px;                               
+}
+
+
+@media (max-width: 900px){
+  .home .hero{ padding-top: 1.25rem; }
+  .home .hero-right h2{
+    font-size: 2rem;
+    margin-top: 0;
+  }
+}
