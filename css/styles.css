@@ -252,3 +252,35 @@ header .brand a:focus { text-decoration: underline; }
 
 .menu-toggle:active{ transform: translateY(1px); }
 .menu-toggle:focus-visible{ outline:3px solid #fff; outline-offset:2px; }
+
+/* HAMBURGER — pill bars, strong override */
+header nav .menu-toggle{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:44px;
+  height:44px;
+  padding:0;
+  margin-left:auto;
+  border:0;
+  background:transparent;
+  -webkit-tap-highlight-color: transparent;
+  cursor:pointer;
+}
+
+header nav .menu-toggle .bar{
+  width:28px !important;          /* length of each bar */
+  height:4px !important;          /* thickness */
+  background:#fff !important;     /* white bars */
+  border-radius:999px !important; /* fully rounded ends */
+  display:block;
+}
+
+header nav .menu-toggle .bar + .bar{
+  margin-top:6px;                 /* equal spacing */
+}
+
+header nav .menu-toggle:focus-visible{
+  outline:3px solid #fff;
+  outline-offset:2px;
+}
