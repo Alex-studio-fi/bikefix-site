@@ -5,13 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Palvelut – BikeFix</title>
   <link rel="stylesheet" href="css/styles.css"/>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
 
 <header>
   <nav>
     <h1 class="brand"><a href="index.html">BikeFix</a></h1>
-    <ul>
+
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">
+      <span class="visually-hidden">Menu</span>
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+
+    <ul id="main-menu">
       <li><a href="index.html">Etusivu</a></li>
       <li><a href="palvelut.html" aria-current="page">Palvelut</a></li>
       <li><a href="tilaa.html">Tilaa huolto</a></li>
