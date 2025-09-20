@@ -628,3 +628,15 @@ header nav a[aria-current="page"] {
   text-decoration: none !important;
   border-bottom: none !important;
 }
+/* Mobile menu: no radius + align with brand */
+@media (max-width: 900px){
+  
+  header nav ul{
+    border-radius: 0 !important;
+    padding: .5rem 16px !important;   
+  }
+  
+  header nav a{
+    padding: .9rem 0 !important;      
+  }
+}
