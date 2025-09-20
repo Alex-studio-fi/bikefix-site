@@ -284,3 +284,56 @@ header nav .menu-toggle:focus-visible{
   outline:3px solid #fff;
   outline-offset:2px;
 }
+/* Header height + alignment (stable on mobile) */
+header { padding: 0; }
+header nav { 
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 10px 16px;        /* top/bottom 10px, sides 16px */
+  min-height: 56px;          /* fixed header height */
+  display: flex;
+  align-items: center;
+}
+
+/* Hamburger: pill bars drawn via one pseudo-element */
+.menu-toggle{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-left: auto;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* hide old spans if они есть */
+.menu-toggle .bar{ display: none !important; }
+
+/* three white rounded bars */
+.menu-toggle::before{
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 12px;                /* first bar Y */
+  width: 28px;
+  height: 4px;
+  background: #fff;
+  border-radius: 999px;
+  /* second and third bars */
+  box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
+}
+
+/* focus/active feedback */
+.menu-toggle:focus-visible{ outline: 3px solid #fff; outline-offset: 2px; }
+.menu-toggle:active{ transform: translateY(1px); }
+
+/* Mobile dropdown positioning uses the fixed header height (56px) */
+@media (max-width: 900px){
+  nav ul{
+    top: 56px;              /* aligns exactly under header */
+  }
+}
