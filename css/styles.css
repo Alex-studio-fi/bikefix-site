@@ -660,6 +660,13 @@ header nav a[aria-current="page"] {
 /* Home: raise the hero title by ~0.5cm on desktop */
 @media (min-width: 901px){
   .home .hero-right h2{
-    margin-top: -19px;  
+    margin-top: -56px;  
+  }
+}
+
+/* Home: push CTA down by ~2cm on desktop */
+@media (min-width: 901px){
+  .home .hero-right .cta-button{
+    margin-top: 76px; /* ≈ 2cm */
   }
 }
