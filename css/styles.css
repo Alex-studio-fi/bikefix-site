@@ -161,11 +161,16 @@ header .brand a:focus { text-decoration: underline; }
   }
   nav li{ list-style:none; padding:.5rem 0; }
   nav a{ display:block; }
-  .menu-toggle[aria-expanded="true"] + ul{ max-height: 320px; }
+
 }
 
 @media (min-width: 901px){
   .menu-toggle{ display:none; }
   nav ul{ position: static; display:flex; gap:1rem; max-height:none; border:0; }
   nav li{ padding:0; }
+}
+@media (max-width: 900px){
+  body.menu-open nav ul{
+    max-height: 320px;
+  }
 }
