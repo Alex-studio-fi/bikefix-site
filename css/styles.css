@@ -226,3 +226,29 @@ header .brand a:focus { text-decoration: underline; }
   nav li{ padding:0; }
 }
 
+/* Hamburger look & alignment */
+.menu-toggle{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:44px;
+  height:44px;
+  padding:0;
+  margin-left:auto;        
+  border-radius:10px;
+  background:transparent;
+  cursor:pointer;
+}
+
+.menu-toggle .bar{
+  display:block;
+  width:26px;              
+  height:3px;              
+  background:#fff;
+  border-radius:3px;
+}
+
+.menu-toggle .bar + .bar{ margin-top:5px; }
+
+.menu-toggle:active{ transform: translateY(1px); }
+.menu-toggle:focus-visible{ outline:3px solid #fff; outline-offset:2px; }
