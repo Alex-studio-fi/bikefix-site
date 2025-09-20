@@ -436,3 +436,33 @@ header nav {
   nav ul{ position: static; display:flex; gap:1rem; border:0; }
   nav li{ padding:0; }
 }
+/* DESKTOP header layout (>=901px) */
+@media (min-width: 901px){
+  header nav{
+    display:flex;
+    align-items:center;
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 10px 16px;
+  }
+
+  /* hide the hamburger on desktop, force */
+  .menu-toggle{
+    display:none !important;
+  }
+
+  /* show the inline menu on the right */
+  nav ul{
+    position: static !important;
+    display: flex !important;
+    gap: 1.25rem;
+    margin-left: auto;     /* push to the right */
+    padding: 0 !important;
+    border: 0 !important;
+    max-height: none !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  nav li{ padding: 0; }
+}
