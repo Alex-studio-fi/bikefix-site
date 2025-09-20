@@ -793,3 +793,16 @@ header nav a[aria-current="page"] {
 @media (min-width: 901px){
   .br-desktop { display: inline; }
 }
+/* Bigger "Miten toimii?" */
+.how h3{
+  font-size: clamp(1.6rem, 1.3vw + 1.1rem, 2.2rem);
+  line-height: 1.15;
+}
+/* More space under "Miten toimii?" */
+.how h3{
+  margin-bottom: 1.5rem;   /* было 1rem; можно поставить 2rem если нужно ещё больше */
+}
+
+@media (min-width: 901px){
+  .how h3{ margin-bottom: 1.75rem; }
+}
