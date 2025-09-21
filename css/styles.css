@@ -997,3 +997,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     margin-top: 0.4rem !important;
   }
 }
+/* Palvelut: align top spacing of hero with Etusivu (mobile) */
+@media (max-width: 900px){
+  body.palvelut .hero{
+    margin-top: 1.00rem !important;  /* подгонка, как на Etusivu */
+  }
+}
