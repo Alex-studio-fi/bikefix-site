@@ -936,3 +936,64 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     line-height: 1.5;
   }
 }
+
+@media (min-width: 901px){
+  .hero .hero-right h2{
+    font-size: clamp(2.2rem, 2.1vw + 1.2rem, 3rem);
+    line-height: 1.15;
+  }
+}
+@media (max-width: 900px){
+  .hero .hero-right h2{
+    font-size: 2rem;           
+    line-height: 1.2;
+  }
+}
+/* Match hero subtitle size across pages */
+@media (min-width: 901px){
+  .hero .hero-right p{
+    font-size: 1.28rem;
+    line-height: 1.55;
+    max-width: 52ch;
+  }
+}
+@media (max-width: 900px){
+  .hero .hero-right p{
+    font-size: 1.06rem;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 901px){
+  .palvelut .hero .hero-right h2{ margin-bottom: 0 !important; }
+  .palvelut .hero .hero-right p { margin-top: 40px !important; }
+}
+@media (max-width: 900px){
+  .palvelut .hero .hero-right h2{ margin-bottom: 0 !important; }
+  .palvelut .hero .hero-right p { margin-top: .5rem !important; }
+}
+.cards .card ul{ list-style: none; padding-left: 0; }
+.cards .card li{
+  position: relative;
+  padding-left: 1.25rem; 
+}
+.cards .card li::before{
+  content: "";
+  position: absolute;
+  left: 0; top: .45em;
+  width: .55rem; height: .55rem;
+  border-right: 2px solid #0038A8;
+  border-bottom: 2px solid #0038A8;
+  transform: rotate(90deg);
+}
+
+@media (min-width: 901px){
+  .palvelut .hero .hero-right p { 
+    margin-top: 24px !important;
+  }
+}
+@media (max-width: 900px){
+  .palvelut .hero .hero-right p { 
+    margin-top: 0.4rem !important;
+  }
+}

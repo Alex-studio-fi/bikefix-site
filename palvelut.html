@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Palvelut – BikeFix</title>
-  <link rel="stylesheet" href="css/styles.css?v=3">
+  <link rel="stylesheet" href="css/styles.css?v=7">
   <script src="js/main.js" defer></script>
 </head>
-<body>
+<body class="palvelut">
 
 <header>
   <nav>
@@ -32,9 +32,20 @@
 
 <main class="container">
   <section class="hero" aria-labelledby="packages-title">
+  <img
+    src="images/palvelut_hero.svg"
+    alt="Mekaanikko ja työkalut huoltopisteellä"
+    width="1200" height="400"
+    decoding="async" fetchpriority="high"
+    style="max-width:100%;height:auto;border-radius:8px;"
+  >
+
+  <div class="hero-right">
     <h2 id="packages-title">Huoltopaketit</h2>
     <p>Valitse sinulle sopiva huolto – tilaat yhdellä klikkauksella.</p>
-  </section>
+  </div>
+</section>
+
 
   <section class="cards" aria-labelledby="packages-title">
     <article class="card">
