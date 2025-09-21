@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="172" height="28" viewBox="0 0 172 28" role="img" aria-label="BikeFix">
+  <style>
+    .word{font: 800 16px/1 system-ui,-apple-system,"Segoe UI",Roboto,"Open Sans","Helvetica Neue",Arial,sans-serif; letter-spacing:.2px}
+    .icon{color:#fff} /* даёт белый цвет для currentColor */
+  </style>
+
+  <!-- Иконка слева (белая) -->
+  <g class="icon" transform="translate(6,4) scale(1.05)">
+    <!-- твой svg, только внутренности; он наследует currentColor (=#fff) -->
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+         aria-hidden="true">
+      <path d="M11 10.27 7 3.34"/>
+      <path d="m11 13.73-4 6.93"/>
+      <path d="M12 22v-2"/>
+      <path d="M12 2v2"/>
+      <path d="M14 12h8"/>
+      <path d="m17 20.66-1-1.73"/>
+      <path d="m17 3.34-1 1.73"/>
+      <path d="M2 12h2"/>
+      <path d="m20.66 17-1.73-1"/>
+      <path d="m20.66 7-1.73 1"/>
+      <path d="m3.34 17 1.73-1"/>
+      <path d="m3.34 7 1.73 1"/>
+      <circle cx="12" cy="12" r="2"/>
+      <circle cx="12" cy="12" r="8"/>
+    </svg>
+  </g>
+
+  <!-- Подпись справа -->
+  <text class="word" x="44" y="20" fill="#fff">BikeFix</text>
+</svg>
+
