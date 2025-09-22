@@ -1006,21 +1006,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 /* === Normalize hero images across pages === */
 :root{
-  /* Можно подстроить под ваш вкус: */
-  --hero-img-max: 420px;   /* одинаковая видимая ширина */
-  --hero-aspect: 4 / 3;    /* одинаковая пропорция рамки */
+  --hero-img-max: 420px; 
+  --hero-aspect: 4 / 3;    
 }
 
-/* Одинаковая «рамка» для обеих иллюстраций */
 .hero-illustration{
   width: min(100%, var(--hero-img-max));
-  aspect-ratio: var(--hero-aspect); /* задаём одинаковую высоту из ширины */
-  object-fit: contain;               /* картинка впишется без искажений */
+  aspect-ratio: var(--hero-aspect);
+  object-fit: contain;              
   display: block;
   border-radius: 8px;
 }
 
-/* На очень узких экранах можно чуть уменьшить рамку */
 @media (max-width: 360px){
   .hero-illustration{ --hero-img-max: 360px; }
 }
