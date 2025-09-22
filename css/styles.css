@@ -1003,3 +1003,48 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     margin-top: 1.00rem !important;
   }
 }
+
+/* Tilaa hero = Palvelut hero: панель, скругления, сетка, размеры */
+body .hero{
+  /* базово: уже есть стили, не трогаем */
+}
+
+/* только для страницы Tilaa */
+body.tilaa .hero{
+  max-width: var(--max);
+  margin: 1.5rem auto;          /* как на Palvelut */
+  padding: 2rem 1rem;           /* как на Palvelut */
+  background: var(--panel);     /* голубая панель */
+  border-radius: var(--radius); /* скругления */
+  display: grid;
+  grid-template-columns: .9fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+body.tilaa .hero > img{
+  width: min(100%, 400px);      /* тот же лимит, что и на Palvelut */
+  height: auto;
+  border-radius: 8px;
+  margin: 0;
+}
+
+body.tilaa .hero-right{
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+  text-align: left;
+}
+
+/* мобильная колонка — такой же переход, как у Palvelut */
+@media (max-width: 900px){
+  body.tilaa .hero{
+    display: block;
+    padding: 1.5rem 1rem;
+    margin: 1rem auto 1.5rem;
+  }
+  body.tilaa .hero > img{
+    max-height: 220px;
+    margin: 0 auto .75rem;
+  }
+}

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/styles.css?v=3">
   <script src="js/main.js" defer></script>
 </head>
-<body>
+<body class="tilaa">
 
 <header>
   <nav>
@@ -31,10 +31,21 @@
 </header>
 
 <main class="container">
-  <section class="hero">
-    <h2>Tilaa huolto</h2>
+  <section class="hero" aria-labelledby="order-hero-title">
+  <img
+    src="images/tilaa_hero.svg"
+    alt="Mekaanikko ja työkalut huoltopisteellä"
+    width="1200" height="400"
+    decoding="async" fetchpriority="high"
+    style="max-width:100%;height:auto;border-radius:8px;"
+  >
+
+  <div class="hero-right">
+    <h2 id="order-hero-title">Tilaa huolto</h2>
     <p>Täytä lomake – noudamme pyöräsi haluamanasi ajankohtana.</p>
-  </section>
+  </div>
+</section>
+
 
   <section aria-labelledby="order-form-title">
     <h3 id="order-form-title">Varauslomake</h3>
