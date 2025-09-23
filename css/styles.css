@@ -1074,3 +1074,26 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     margin-top: 16px;
   }
 }
+
+/* Mobile fix: date/time не вылезают за край */
+@media (max-width: 640px){
+  .form input[type="date"],
+  .form input[type="time"]{
+    -webkit-appearance: none; /* iOS: отключаем нативный стиль, который распирает ширину */
+    appearance: none;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;            /* важно для grid, чтобы не распирало колонку */
+    background: #fff;        /* делаем как у остальных инпутов */
+    border: 1px solid #cfd6e6;
+    border-radius: 8px;
+    padding: .7rem;
+  }
+
+  /* подстраховка: не даём детям грида тянуться за пределы */
+  .form > * { min-width: 0; }
+
+  /* крайний случай: аккуратно «режем» возможный 1–2px выход справа */
+  .form { overflow: hidden; }
+}
