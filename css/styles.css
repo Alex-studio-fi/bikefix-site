@@ -1069,3 +1069,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     box-shadow: none;
   }
 }
+@media (max-width: 640px){
+  .page-tilaa .hero{
+    margin-top: 16px;
+  }
+}
