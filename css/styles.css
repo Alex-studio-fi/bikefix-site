@@ -1022,4 +1022,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .hero-illustration{ --hero-img-max: 360px; }
 }
 
+/* размер заголовка формы */
+.form-title {
+  font-size: 1.3rem;  /* примерно 24 px */
+  line-height: 2;   /* чтобы строки не были слишком «воздушными» */
+  margin-bottom: 15px;
+}
 
