@@ -1009,6 +1009,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   --hero-img-max: 420px; 
   --hero-aspect: 4 / 3;    
 }
+.page-tilaa .hero-illustration{
+  --hero-aspect: 3 / 2;   /* было 4/3 — из-за этого панель была выше */
+}
 
 .hero-illustration{
   width: min(100%, var(--hero-img-max));
@@ -1024,8 +1027,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 /* размер заголовка формы */
 .form-title {
-  font-size: 1.3rem;  /* примерно 24 px */
-  line-height: 2;   /* чтобы строки не были слишком «воздушными» */
-  margin-bottom: 15px;
+  font-size: 1.5rem;  /* примерно 24 px */
+  line-height: 1.2;   /* чтобы строки не были слишком «воздушными» */
+  margin-bottom: 12px;
 }
 
