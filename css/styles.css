@@ -1021,3 +1021,5 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @media (max-width: 360px){
   .hero-illustration{ --hero-img-max: 360px; }
 }
+
+

@@ -46,34 +46,36 @@
 
 
   <section aria-labelledby="order-form-title">
-    <h3 id="order-form-title">Varauslomake</h3>
-    <form class="form" action="#" method="post">
-      <label for="nimi">Nimi</label>
-      <input id="nimi" name="nimi" type="text" required autocomplete="name" placeholder="Etunimi ja sukunimi">
+  <form class="form" action="#" method="post">
+    <h3 id="order-form-title" class="form-title">Varauslomake</h3>
 
-      <label for="osoite">Osoite</label>
-      <input id="osoite" name="osoite" type="text" required autocomplete="address-line1" placeholder="Katuosoite, huoneisto">
+    <label for="nimi">Nimi</label>
+    <input id="nimi" name="nimi" type="text" required autocomplete="name" placeholder="Etunimi ja sukunimi">
 
-      <label for="puhelin">Puhelin</label>
-      <input id="puhelin" name="puhelin" type="tel" required autocomplete="tel" placeholder="+358 …">
+    <label for="osoite">Osoite</label>
+    <input id="osoite" name="osoite" type="text" required autocomplete="address-line1" placeholder="Katuosoite, huoneisto">
 
-      <label for="kuvaus">Pyörän kuvaus</label>
-      <textarea id="kuvaus" name="kuvaus" required placeholder="Merkki, malli, ongelma"></textarea>
+    <label for="puhelin">Puhelin</label>
+    <input id="puhelin" name="puhelin" type="tel" required autocomplete="tel" placeholder="+358 …">
 
-      <div class="grid-2">
-        <div>
-          <label for="paiva">Päivämäärä</label>
-          <input id="paiva" name="paiva" type="date" required>
-        </div>
-        <div>
-          <label for="aika">Kellonaika</label>
-          <input id="aika" name="aika" type="time" required>
-        </div>
+    <label for="kuvaus">Pyörän kuvaus</label>
+    <textarea id="kuvaus" name="kuvaus" required placeholder="Merkki, malli, ongelma"></textarea>
+
+    <div class="grid-2">
+      <div>
+        <label for="paiva">Päivämäärä</label>
+        <input id="paiva" name="paiva" type="date" required>
       </div>
+      <div>
+        <label for="aika">Kellonaika</label>
+        <input id="aika" name="aika" type="time" required>
+      </div>
+    </div>
 
-      <button type="submit" class="cta-button">Lähetä</button>
-    </form>
-  </section>
+    <button type="submit" class="cta-button">Lähetä</button>
+  </form>
+</section>
+
 </main>
 
 <footer>

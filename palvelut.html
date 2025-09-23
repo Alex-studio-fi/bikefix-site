@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Palvelut – BikeFix</title>
-  <link rel="stylesheet" href="css/styles.css?v=5">
+  <link rel="stylesheet" href="css/styles.css?v=4">
   <script src="js/main.js" defer></script>
 </head>
 <body class="palvelut">
@@ -32,11 +32,12 @@
 
 <main class="container">
   <section class="hero" aria-labelledby="packages-title">
-  <img class="hero-illustration"
-     src="images/palvelut_hero.svg"
-     alt="Mekaanikko ja työkalut huoltopisteellä"
-     width="640" height="430"
-     decoding="async">
+  <img
+    src="images/palvelut_hero.svg"
+    alt="Mekaanikko ja työkalut huoltopisteellä"
+    width="1200" height="400"
+    decoding="async" fetchpriority="high"
+    style="max-width:100%;height:auto;border-radius:8px;">
 
   <div class="hero-right">
     <h2 id="packages-title">Huoltopaketit</h2>
