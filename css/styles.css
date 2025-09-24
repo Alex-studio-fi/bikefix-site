@@ -1144,3 +1144,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     margin-top: 1rem;
   }
 }
+
+@media (max-width: 900px){
+  
+  .page-tilaa .hero{
+    margin: 1rem auto !important; 
+    padding: 1.83rem 1rem !important; 
+    display: block !important;       
+  }
+
+  .page-tilaa .hero > img{
+    max-height: 220px !important;
+    margin: 0 auto .75rem !important;
+    width: auto; 
+  }
+}
