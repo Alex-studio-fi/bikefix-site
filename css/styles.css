@@ -1253,3 +1253,55 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     grid-column: 1 / -1;
   }
 }
+
+/* Prettier social links (pills) */
+.social-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: .5rem;
+}
+
+.social{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .55rem .9rem;
+  border-radius: 999px;
+  background: #f2f6ff;             /* мягкая подложка */
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1;
+  border: 1px solid #e6e9f2;        /* лёгкая рамка */
+  transition: background .2s ease, color .2s ease, box-shadow .2s ease, border-color .2s ease, transform .02s ease;
+}
+
+.social:hover,
+.social:focus{
+  background: #e8f0ff;
+  color: var(--blue);
+  border-color: #d9e3fb;
+  text-decoration: none;
+}
+
+.social:active{
+  transform: translateY(1px);
+}
+
+/* Клавиатурный фокус — заметный, но аккуратный */
+.social:focus-visible{
+  outline: 3px solid rgba(0,56,168,.25);
+  outline-offset: 2px;
+}
+
+/* Компактнее на очень узких экранах */
+@media (max-width: 360px){
+  .social{ padding: .5rem .75rem; }
+}
+
+.social:hover,
+.social:focus{
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+}
