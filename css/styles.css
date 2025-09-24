@@ -1106,3 +1106,35 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .yhteystiedot .hero .hero-right h2{ margin-bottom: 0 !important; }
   .yhteystiedot .hero .hero-right p { margin-top: 0.4rem !important; }
 }
+
+.yhteystiedot .hero{
+  max-width: var(--max);
+  margin: 1.5rem auto;
+  padding: 1rem 1rem;
+  background: var(--panel);
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-columns: .9fr 1fr; 
+  gap: 2rem;
+  align-items: center;
+}
+
+
+.yhteystiedot .hero > .hero-illustration{
+  width: min(100%, 400px);
+  height: auto;
+  border-radius: 8px;
+  margin: 0;
+}
+
+
+@media (max-width: 900px){
+  .yhteystiedot .hero{
+    display: block;
+    padding: 1.5rem 1rem;
+  }
+  .yhteystiedot .hero > .hero-illustration{
+    max-height: 220px;
+    margin: 0 auto .75rem;
+  }
+}
