@@ -1075,25 +1075,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   }
 }
 
-/* Mobile fix: date/time не вылезают за край */
+
 @media (max-width: 640px){
   .form input[type="date"],
   .form input[type="time"]{
-    -webkit-appearance: none; /* iOS: отключаем нативный стиль, который распирает ширину */
+    -webkit-appearance: none;
     appearance: none;
     box-sizing: border-box;
     width: 100%;
     max-width: 100%;
-    min-width: 0;            /* важно для grid, чтобы не распирало колонку */
-    background: #fff;        /* делаем как у остальных инпутов */
+    min-width: 0;            
+    background: #fff;        
     border: 1px solid #cfd6e6;
     border-radius: 8px;
     padding: .7rem;
   }
 
-  /* подстраховка: не даём детям грида тянуться за пределы */
+
   .form > * { min-width: 0; }
 
-  /* крайний случай: аккуратно «режем» возможный 1–2px выход справа */
+
   .form { overflow: hidden; }
+}
+
+@media (min-width: 901px){
+  .yhteystiedot .hero .hero-right h2{ margin-bottom: 0 !important; }
+  .yhteystiedot .hero .hero-right p { margin-top: 24px !important; }
+}
+@media (max-width: 900px){
+  .yhteystiedot .hero .hero-right h2{ margin-bottom: 0 !important; }
+  .yhteystiedot .hero .hero-right p { margin-top: 0.4rem !important; }
 }
