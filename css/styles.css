@@ -1110,7 +1110,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .yhteystiedot .hero{
   max-width: var(--max);
   margin: 1.5rem auto;
-  padding: 1rem 1rem;
+  padding: 0.95rem 1rem;
   background: var(--panel);
   border-radius: var(--radius);
   display: grid;
@@ -1131,10 +1131,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @media (max-width: 900px){
   .yhteystiedot .hero{
     display: block;
-    padding: 1.5rem 1rem;
+    padding: 1.63rem 1rem;
   }
   .yhteystiedot .hero > .hero-illustration{
     max-height: 220px;
     margin: 0 auto .75rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .yhteystiedot .hero {
+    margin-top: 1rem;
   }
 }
