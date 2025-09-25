@@ -1460,3 +1460,48 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   }
 }
 
+/* --- Contact list: фиксируем макет, отключаем пересечения --- */
+.contact-list { 
+  display: grid !important;
+  gap: .65rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-style: normal;
+}
+
+.contact-list .item{
+  display: flex !important;            /* вместо grid здесь — надёжнее */
+  align-items: flex-start !important;
+  gap: .55rem !important;
+}
+
+.contact-list .icon{
+  flex: 0 0 28px !important;
+  width: 28px !important;
+  height: 28px !important;
+  color: var(--blue) !important;
+  display: inline-grid !important;
+  place-items: center !important;
+}
+
+.contact-list .icon svg{
+  width: 100% !important;
+  height: 100% !important;
+  stroke: currentColor !important;
+  fill: none !important;
+  stroke-width: 2 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+}
+
+/* текст рядом с иконкой не «уезжает» вправо */
+.contact-list .item > div,
+.contact-list .item > a.link{
+  line-height: 1.45;
+}
+
+/* чуть плотнее на очень узких экранах */
+@media (max-width: 360px){
+  .contact-list .item{ gap: .45rem !important; }
+  .contact-list .icon{ width: 26px !important; height: 26px !important; }
+}
