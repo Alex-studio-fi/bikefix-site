@@ -1308,20 +1308,37 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 /* Remove numbers 1–3 in "Miten toimii?" and keep layout clean */
 .step-badge{
-  display: none !important;         /* скрываем кружки с цифрами */
+  display: none !important;        
 }
 
-/* Иконка больше не делит строку с badge — центрируем её */
 .step-media{
   grid-template-columns: 1fr !important;
   justify-items: center;
   gap: .25rem;
 }
 
-/* На десктопе тоже одна колонка под иконку */
 @media (min-width: 768px){
   .step-media{
     grid-template-columns: 1fr !important;
     justify-content: center;
   }
+}
+
+/* Why Us section */
+.why-us {
+  max-width: 800px;
+  margin: 2.5rem auto;
+  padding: 1.5rem;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.why-us h3 {
+  text-align: center;
+  color: var(--blue);
+  margin-bottom: 1rem;
+}
+
+.why-us p {
+  margin: 0 0 1rem;
 }
