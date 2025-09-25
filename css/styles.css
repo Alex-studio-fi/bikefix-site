@@ -1459,18 +1459,4 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     max-height: 320px; 
   }
 }
-/* --- Fix: make date/time inputs full width on iOS Safari inside CSS Grid --- */
-.grid-2 > * { 
-  min-width: 0;                /* разрешаем детям grid сжиматься/растягиваться */
-}
 
-.form input[type="date"],
-.form input[type="time"] {
-  width: 100%;
-  min-width: 100%;             /* ломаем внутренний min-content у iOS */
-  inline-size: 100%;           /* логическое свойство - на всякий случай */
-  min-inline-size: 100%;
-  -webkit-appearance: none;    /* убираем специфический рендеринг Safari */
-  appearance: none;
-  box-sizing: border-box;
-}
